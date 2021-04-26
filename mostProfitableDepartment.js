@@ -1,4 +1,5 @@
 function mostProfitableDepartment(list){
+  if (typeof list == "object"){
 	const departments = {};
   
   for (var i=0;i<list.length;i++){
@@ -20,5 +21,9 @@ function mostProfitableDepartment(list){
     }
   }
   return currentMostProfit;
+}
+else{
+  return "Please enter a valid list";
+}
   
 };

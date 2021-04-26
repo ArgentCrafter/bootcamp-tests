@@ -1,4 +1,5 @@
 function countAllPaarl(regString){
+  if (typeof regString == "string"){
     var regList = regString.split(", ");
     var regAnswer = 0;
     for (var i=0;i<regList.length;i++){
@@ -7,4 +8,7 @@ function countAllPaarl(regString){
       }
     }
     return regAnswer;
+  }
+  else
+  return "Please enter a string";
   };

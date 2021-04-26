@@ -1,4 +1,5 @@
 function fromWhere(regNumber){
+  if (typeof regNumber == "string"){
     switch (regNumber) {
       case "CY":
         return "Bellville";
@@ -12,4 +13,8 @@ function fromWhere(regNumber){
       default:
         return "Some other place!";
   }
-  }
+}
+else{
+  return "Please enter a valid string";
+}
+  };

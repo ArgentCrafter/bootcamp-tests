@@ -1,4 +1,5 @@
 function countAllFromTown(regString, regTown){
+  if ((typeof regString == "string") && (typeof regTown == "string")){
     var regList = regString.split(",");
     console.log(regList);
     var regAnswer = 0;
@@ -8,4 +9,8 @@ function countAllFromTown(regString, regTown){
       }
     }
     return regAnswer;
+  }
+  else{
+    return "Please enter a string";
+  }
   };
